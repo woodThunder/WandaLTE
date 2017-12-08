@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>万达智慧院线云平台</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+	<link rel="stylesheet" type="text/css" href="common/css/style.css"/>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <style>
+  	.circle{ height:150px;}
+  </style>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <!--<span class="logo-mini"><b>万达智慧院线云平台</b></span>-->
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>万达智慧院线云平台</b></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#"><span class="header-time"></span></a>
+          </li>
+          <li>
+            <a href="#"><span class="header-tem">0</span>℃</a>
+          </li>
+          <li>
+            <a href="#"><span class="header-btn">退出</span></a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <!--<div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>-->
+        <div class="info">
+          <p>万达客户</p>
+          <a href="#"><i class="fa fa-circle text-green"></i> 在线</a>
+        </div>
+      </div>
+      
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <!--<li class="header">MAIN NAVIGATION</li>-->
+        <li class="treeview">
+          <a href="index.html">
+            <i class="fa fa-home"></i> <span>万达影城</span>
+          </a>
+        </li>
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-files-o"></i>
+            <span>设备</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="hall.html?id=266,301"><i class="fa fa-circle-o"></i> 1号厅</a></li>
+            <li><a href="hall.html?id=268,302"><i class="fa fa-circle-o"></i> 2号厅</a></li>
+            <li><a href="hall.html?id=274,303"><i class="fa fa-circle-o"></i> 3号厅</a></li>
+            <li><a href="hall.html?id=280,304"><i class="fa fa-circle-o"></i> 4号厅 </a></li>
+            <li><a href="hall.html?id=284,305"><i class="fa fa-circle-o"></i> 5号厅 </a></li>
+            <li><a href="hall.html?id=282,306"><i class="fa fa-circle-o"></i> 6号厅 </a></li>
+            <li><a href="hall.html?id=276,307"><i class="fa fa-circle-o"></i> 7号厅 </a></li>
+            <li><a href="hall.html?id=264,308"><i class="fa fa-circle-o"></i> 8号厅 </a></li>
+            <li><a href="hall.html?id=262,309"><i class="fa fa-circle-o"></i> 9号厅 </a></li>
+            <li><a href="air.html?id=266"><i class="fa fa-circle-o"></i> 1号厅空调</a></li>
+            <li><a href="air.html?id=268"><i class="fa fa-circle-o"></i> 2号厅空调</a></li>
+            <li><a href="air.html?id=274"><i class="fa fa-circle-o"></i> 3号厅空调</a></li>
+            <li><a href="air.html?id=280"><i class="fa fa-circle-o"></i> 4号厅空调</a></li>
+            <li><a href="air.html?id=284"><i class="fa fa-circle-o"></i> 5号厅空调 </a></li>
+            <li><a href="air.html?id=282"><i class="fa fa-circle-o"></i> 6号厅空调 </a></li>
+            <li><a href="air.html?id=276"><i class="fa fa-circle-o"></i> 7号厅空调 </a></li>
+            <li><a href="air.html?id=264"><i class="fa fa-circle-o"></i> 8号厅空调 </a></li>
+            <li><a href="air.html?id=262"><i class="fa fa-circle-o"></i> 9号厅空调 </a></li>
+            <li><a href="air.html?id=260"><i class="fa fa-circle-o"></i> 大堂空调 </a></li>
+            <li><a href="air.html?id=278"><i class="fa fa-circle-o"></i> 北走廊1号空调 </a></li>
+            <li><a href="air.html?id=272"><i class="fa fa-circle-o"></i> 北走廊2号空调 </a></li>
+            <li><a href="air.html?id=290"><i class="fa fa-circle-o"></i> 南走廊1号空调 </a></li>
+            <li><a href="air.html?id=270"><i class="fa fa-circle-o"></i> 南走廊2号空调 </a></li>
+            <li><a href="air.html?id=286"><i class="fa fa-circle-o"></i> 放映厅空调 </a></li>
+            <li><a href="air.html?id=288"><i class="fa fa-circle-o"></i> 办公室空调 </a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-table"></i>
+            <span>数据</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+          	<li><a href="halldata.html"><i class="fa fa-circle-o"></i> 万达影厅</a></li>
+            <li><a href="airdata.html"><i class="fa fa-circle-o"></i> 空调机组</a></li>
+            <li><a href="eledata.html"><i class="fa fa-circle-o"></i> 空调电量</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <!--<h1>
+                万达影城
+        <small>V 1.0</small>
+      </h1>-->
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 设备</a></li>
+        <!--<li class="active">设备</li>-->
+        <li class="active devname">空调机组</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+			<!--近一个月内总电量汇总-->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title devname">空调机组</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="row hall">
+                <div class="col-md-8 air-bg">
+                  <a href="air.html" id="airdata">
+                  	<img src="common/images/22.jpg" id="air-big"/>
+                  	<img src="common/images/fj.gif" class="fj-big"/>
+                  	<div  id="TD0" class="changwen" title="送风温度">送风温度<span></span>℃</div>
+										<div  id="TD1" class="changwen" title="混风温度">混风温度<span></span>℃</div>
+										<div  id="TD2" class="changwen" title="冷冻水送水温度">冷冻水送水温度<span></span>℃</div>
+										<div  id="TD3" class="changwen" title="冷冻水回水温度">冷冻水回水温度<span></span>℃</div>
+										<div  id="TD4" class="changwen" title="热水送水温度">热水送水温度<span></span>℃</div>
+										<div  id="TD5" class="changwen" title="热水回水温度">热水回水温度<span></span>℃</div>
+										<div  id="TD6" class="changwen" title="送风温度设定点">送风温度设定点<span></span>℃</div>
+										<div  id="TD7" class="changwen" title="风阀开度">风阀开度<span></span>%</div>
+										<div  id="TD8" class="changwen" title="风机速度">风机速度<span></span>%</div>
+										<div  id="TD9" class="changwen" title="风机速度反馈">风机速度反馈<span></span>%</div>
+										<div  id="TD10" class="changwen" title="数据同步时间">数据同步时间<i></i></div>
+                  </a>
+                </div>
+                <!-- /.col -->
+                <div class="col-md-4 ">
+                	<div class="air">
+                		<p class="status">
+											<span>空调状态：</span>
+											<span class="airstatus run"></span>
+										</p>
+										<p class="status">
+											<span>报警状态：</span>
+											<span class="alarmstatus run"></span>
+										</p>
+                	</div>
+                	<div class="wrap">
+										<div class="doubletem" id="doubletem"></div>
+										<!--<div class="ss">舒适</div>-->
+									</div>
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- ./box-body -->
+            <div class="box-footer">
+              <div class="row">
+                <!-- /.col -->
+								<div class="col-sm-2 col-xs-6 text-center">
+                  <div class="circle" id="speed"></div>
+                  <div class="knob-label">速度反馈和风机速度（%）</div>
+                </div>
+                <div class="col-sm-2 col-xs-6 text-center">
+                  <div class="circle" id="SFtem"></div>
+                  <div class="knob-label">送风温度（℃）</div>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-2 col-xs-6 text-center">
+                	<div class="circle" id="HFtem"></div>
+                  <div class="knob-label">混风温度（℃）</div>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-2 col-xs-6 text-center">
+                	<div class="circle" id="FFstatus"></div>
+                  <div class="knob-label">风阀开度（%）</div>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-2 col-xs-6 text-center">
+                	<div class="circle" id="ele"></div>
+                  <div class="knob-label">用电量（KWH）</div>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-2 col-xs-6 text-center">
+                	<div class="circle" id="time"></div>
+                  <div class="knob-label">运行时间（h）</div>
+                </div>
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-footer -->
+            <div class="box-footer">
+              <div class="row">
+                <!-- /.col -->
+								<div class="col-sm-3 col-xs-6 text-center">
+                  <div class="circle" id="GL"></div>
+                  <div class="knob-label">功率（KW）</div>
+                </div>
+                <div class="col-sm-3 col-xs-6 text-center">
+                  <div class="circle" id="DLA"></div>
+                  <div class="knob-label">A相电流（A）</div>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-3 col-xs-6 text-center">
+                	<div class="circle" id="DLB"></div>
+                  <div class="knob-label">B相电流（A）</div>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-3 col-xs-6 text-center">
+                	<div class="circle" id="DLC"></div>
+                  <div class="knob-label">C相电流（A）</div>
+                </div>
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-md-6">
+          <!-- AREA CHART -->
+          <div class="box box-danger">
+            <div class="box-header with-border">
+              <h3 class="box-title">室内温度和室内温度设定点</h3>
+            </div>
+            <div class="box-body">
+              <div class="chart">
+                <div id="intem" style="height:250px"></div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col (LEFT) -->
+        <div class="col-md-6">
+          <!-- LINE CHART -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">送风温度、送风温度设定点、混风温度、风阀开度</h3>
+            </div>
+            <div class="box-body">
+              <div class="chart">
+                <div id="mixtem" style="height:250px"></div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col (RIGHT) -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-md-6">
+          <!-- AREA CHART -->
+          <div class="box box-danger">
+            <div class="box-header with-border">
+              <h3 class="box-title">三相电流和三相电压</h3>
+            </div>
+            <div class="box-body">
+              <div class="chart">
+                <div id="three" style="height:300px"></div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col (LEFT) -->
+        <div class="col-md-6">
+          <!-- LINE CHART -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">三相有功功率和总有功功率</h3>
+            </div>
+            <div class="box-body">
+              <div class="chart">
+                <div id="threeGL" style="height:300px"></div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col (RIGHT) -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-md-6">
+          <!-- AREA CHART -->
+          <div class="box box-danger">
+            <div class="box-header with-border">
+              <h3 class="box-title">冷冻水送水温度和回水温度</h3>
+            </div>
+            <div class="box-body">
+              <div class="chart">
+                <div id="LDS" style="height:250px"></div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col (LEFT) -->
+        <div class="col-md-6">
+          <!-- LINE CHART -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">热水送水温度和回水温度</h3>
+            </div>
+            <div class="box-body">
+              <div class="chart">
+                <div id="RS" style="height:250px"></div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col (RIGHT) -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <strong>蔚蓝数据 Azure City (Beijing) Technologies Inc.</strong>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.min.js"></script>
+<!-- Sparkline -->
+<!--<script src="plugins/sparkline/jquery.sparkline.min.js"></script>
+
+<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>-->
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+<script src="common/js/shine.js"></script>
+<script src="common/js/jquery.cookie.js" type="text/javascript"></script>
+<!--<script src="dist/js/demo.js"></script>-->
+<script src="common/js/common.js"></script>
+<script src="common/js/radialIndicator.min.js"></script>
+
+
+<script>
+$(function () {
+    
+});
+var id = GetQueryString('id');
+var ids = id + ',' + (parseInt(id) + 1);
+//console.log(ids);
+//放映区和办公室空调机组（小）
+var glconst;
+//console.log(glconst);
+if(id=='266'){
+	glconst = 3;
+}else if(id==='268'){
+	glconst = 5.5;
+}else if(id==='274'){
+	glconst = 3;
+}else if(id=='280'){
+	glconst = 2.2;
+}else if(id=='284'){
+	glconst = 1.5;
+}else if(id=='282'){
+	glconst = 1.5;
+}else if(id=='276'){
+	glconst = 5.5;
+}else if(id=='264'){
+	glconst = 7.5;
+}else if(id=='262'){
+	glconst = 7.5;
+}else if(id=='260'){
+	glconst = 7.5;
+}else if(id=='278'){
+	glconst = 3;
+}else if(id=='272'){
+	glconst = 4;
+}else if(id=='290'){
+	glconst = 0.75;
+}else if(id=='270'){
+	glconst = 4;
+}else if(id=='286'){
+	glconst = 1.5;
+}else if(id=='288'){
+	glconst = 1.5;
+}
+
+//console.log(glconst);
+
+if(id == '286' || id == '288' || id == '278'){
+	$('#air-big').attr('src','common/images/11.jpg');
+	$(".fj-big").addClass("fj-small");
+	$("#TD0").css({
+		"left":"71%",
+		"top":"14%"
+	})
+	$("#TD6").css({
+		"left":"71%",
+		"top":"21%"
+	})
+	$("#TD7").css({
+		"left":"10%",
+		"top":"21%"
+	})
+	$("#TD4").css({
+		"left":"14%",
+		"top":"76%"
+	})
+	$("#TD5").css({
+		"left":"14%",
+		"top":"84%"
+	})
+	$("#TD2").css({
+		"left":"42%",
+		"top":"76%"
+	})
+	$("#TD3").css({
+		"left":"42%",
+		"top":"84%"
+	})
+	$("#TD8").css({
+		"left":"71%",
+		"top":"76%"
+	})
+	$("#TD9").css({
+		"left":"71%",
+		"top":"84%"
+	})
+	$("#TD1").css({
+		"visibility":"hidden"
+	})
+}
+
+//点击空调图片跳转指定数据页面
+var src = "airdata.html?id="+id;
+$("#airdata").attr("href",src);
+
+//console.log(id);
+
+//加载设备信息
+selectdeveic();
+//setInterval(selectdeveic,5000);
+//获取最新设备信息（设备表联动设备记录表）
+function selectdeveic() {
+	//加载空调数据
+	$.ajax({
+	    //要用post方式     
+	    type: "post",
+	    //方法所在页面和方法名     
+	    url: 'http://123.56.156.91:8089/getBzRecordList?params={%22deviceIds%22:%22'+ ids +'%22}',
+	    dataType: "jsonp",
+		  jsonp: "jsonpCallback",
+	    success: function (data) {
+			//查看返回的数据data
+			//console.log(data);
+			//设备的数据信息
+			var devicename = data.data[0].deviceInfo.deviceName;
+//			devicename = devicename.substring(0,devicename.length-2);
+			//console.log(devicename);
+			$('.devname').html(devicename);
+			var attributes = data.data[0].attributes.split(",");
+			var datas = data.data[0].bzRecord.data.split(",");
+			var deviceTime = data.data[0].bzRecord.syncTime;
+			var eledatas = data.data[1].bzRecord.data.split(",");
+			
+			$("#TD10 i").html(deviceTime);
+			
+			if(parseFloat(datas[14]) > 100){datas[14]="100.00"}
+			if(parseFloat(datas[15]) > 100){datas[15]="100.00"}
+			if(parseFloat(datas[16]) > 100){datas[16]="100.00"}
+			if(parseFloat(eledatas[5]) > 20){eledatas[5]=parseFloat(eledatas[5])/100}
+			if(parseFloat(eledatas[6]) > 20){eledatas[6]=parseFloat(eledatas[6])/100}
+			if(parseFloat(eledatas[7]) > 20){eledatas[7]=parseFloat(eledatas[7])/100}
+			var big = [parseFloat(datas[0]).toFixed(1),parseFloat(datas[1]).toFixed(1),parseFloat(datas[2]).toFixed(1),parseFloat(datas[3]).toFixed(1),parseFloat(datas[4]).toFixed(1),parseFloat(datas[5]).toFixed(1),parseFloat(datas[13]).toFixed(1),datas[16],datas[14],datas[15]];
+	    for(var i=0;i<big.length;i++){
+	        $("#TD"+i+" span").html(big[i]);
+	    }
+			
+			//风机速度反馈小于5停止，大于等于5运行
+			if(parseFloat(datas[15]) < 5){
+				$(".airstatus").addClass("stop");
+				$(".fj-big").hide();
+			}else{
+				$(".airstatus").removeClass("stop");
+				$(".fj-big").show();
+			}
+			//风机速度反馈和风机速度相减的绝对值大于等于5故障
+			var alarm = Math.abs(parseFloat(datas[15]) - parseFloat(datas[14]));
+			if(alarm >= 5){
+				$(".alarmstatus").addClass("alarm");
+				$(".fj-big").attr("src","common/images/fj-alarm.gif");
+			}else{
+				$(".alarmstatus").removeClass("alarm");
+				$(".fj-big").attr("src","common/images/fj.gif");
+			}
+			
+			//加载温度和温度设定点
+			doubletem(parseFloat(datas[6]).toFixed(1),parseFloat(datas[8]).toFixed(1));
+			doublepie("speed",datas[15],datas[14],100,"#1390d0","#1ab2d9");
+			singlepie("SFtem",parseFloat(datas[0]).toFixed(1),100,"#91e3e9");
+			singlepie("HFtem",parseFloat(datas[1]).toFixed(1),500,"#99cc33");
+			singlepie("FFstatus",datas[16],500,"#75af00");
+			singlepie("ele",eledatas[0],25000,"#96716e");
+			singlepie("time",eledatas[15],24,"#dc69ab");
+			doublepie("GL",eledatas[1],glconst,10,"#1390d0","#1ab2d9");
+			doublepie("DLA",eledatas[5],5.30,15,"#1390d0","#1ab2d9");
+			doublepie("DLB",eledatas[6],5.30,15,"#1390d0","#1ab2d9");
+			doublepie("DLC",eledatas[7],5.30,15,"#1390d0","#1ab2d9");
+			
+			var nowTimeMs = new Date().getTime() + 28800000;
+			var dd = deviceTime.split(" ");
+			var ddp = dd[0].split("-");
+			var ddn = dd[1].split(":");
+			var lastTimeMs = Date.UTC(ddp[0],(ddp[1] - 1),ddp[2],ddn[0],ddn[1],ddn[2]);
+			var changeTime = nowTimeMs - lastTimeMs;
+			if(changeTime > 600000){
+				$("#devstatusdiv").html("设备停止超过10分钟");	
+			}
+	    },
+	    error: function (err) {
+	    	//alert(err);
+	    }
+	});
+}
+
+// 将中国标准时间格式化为（2017-06-06 15:05:04）
+function formatDateTime(theDate) {
+
+	var _hour = theDate.getHours();
+	
+	var _minute = theDate.getMinutes();
+	
+	var _second = theDate.getSeconds();
+	
+	var _year = theDate.getFullYear()
+	
+	var _month = theDate.getMonth();
+	
+	var _date = theDate.getDate();
+	
+	if(_hour<10){_hour="0"+_hour ;}
+	
+	if(_minute<10){_minute="0"+_minute;  }
+	
+	if(_second<10){_second="0"+_second ; }
+	
+	_month = _month + 1;
+	if(_month < 10){_month = "0" + _month;}
+	
+	if(_date<10){_date="0"+_date ; }
+	
+	return  _year + "-" + _month + "-" + _date + " " + _hour + ":" + _minute + ":" + _second ;
+
+}
+
+var theDate = new Date();
+var _hour = theDate.getHours();
+var _minute = theDate.getMinutes();
+var _second = theDate.getSeconds();
+var _year = theDate.getFullYear();
+var _month = theDate.getMonth();
+//console.log(_month);
+var _date = theDate.getDate();
+if(_hour<10){_hour="0"+_hour  }
+if(_minute<10){_minute="0"+_minute  }
+if(_second<10){_second="0"+_second  }
+if(_month < 9){_month = "0" + (_month+1);}
+if(_month = 9){_month = "10";}
+if(_date<10){_date="0"+_date  }
+
+
+var _endTime =  formatDateTime(new Date());
+var second = new Date().getTime();
+
+var _startTime = formatDateTime(new Date(second-(24*60*60*1000)));
+
+//曲线加载
+devicehistoryslist(id, _startTime, _endTime)
+function devicehistoryslist(devid, startdate, enddate) {
+    var _url = 'http://123.56.156.91:8081/AppInterface/queryAllBzRecord?params={%22deviceId%22:'+ devid +',%22beginTime%22:%22' + startdate + '%22,%22endTime%22:%22' + enddate + '%22}';
+    //加载历史数据列表
+    $.ajax({
+        //要用post方式
+        type: "post",
+        //方法所在页面和方法名
+        url: _url,
+        //contentType: "application/json; charset=utf-8",
+        dataType: "jsonp",
+        jsonp: "jsonpCallback",
+        success: function (data) {
+        	//console.log(data);
+            if(data.data) {
+                var datas = data.data.reverse();
+
+                var xlist = new Array();
+
+                var ary0 = new Array();
+                var ary1 = new Array();
+
+                var ary2 = new Array();
+                var ary3 = new Array();
+                
+                var ary4 = new Array();
+                var ary5 = new Array();
+                
+                var ary6 = new Array();
+                var ary7 = new Array();
+                var ary8 = new Array();
+                var ary9 = new Array();
+
+                for (var i = 0 ; i < datas.length; i++) {
+                    var datasAry = datas[i].data.split(",");
+                    xlist[i] = datas[i].syncTime;
+                    ary0[i] = parseFloat(datasAry[2]).toFixed(1);
+                    ary1[i] = parseFloat(datasAry[3]).toFixed(1);
+                    ary2[i] = parseFloat(datasAry[4]).toFixed(1);
+                    ary3[i] = parseFloat(datasAry[5]).toFixed(1);
+                    ary4[i] = parseFloat(datasAry[6]).toFixed(1);
+                    ary5[i] = parseFloat(datasAry[8]).toFixed(1);
+                    
+                    ary6[i] = parseFloat(datasAry[0]).toFixed(1);
+                    ary7[i] = parseFloat(datasAry[13]).toFixed(1);
+                    ary8[i] = parseFloat(datasAry[1]).toFixed(1);
+                    ary9[i] = datasAry[16];
+                };
+//              console.log(ary0);
+								tem("intem",xlist,ary4,ary5,"室内温度","室内温度设定点");
+								mixtem("mixtem",xlist,ary6,ary7,ary8,ary9);
+                tem("LDS",xlist,ary0,ary1,"冷冻水送水温度","冷冻水回水温度");
+                tem("RS",xlist,ary2,ary3,"热水送水温度","热水回水温度");
+                
+                
+                
+                
+            }else{
+                alert('此时间段没有数据');
+            }
+        },
+        error: function (err) {
+            alert('系统连接错误，请重试！');
+        }
+    });
+}
+
+function tem(id,xlist,data,data1,name,name1){
+	var myChart = echarts.init(document.getElementById(id),"shine");
+	option = {
+		grid: {
+        top: 30,
+        bottom: 80,
+        right: 25,
+        left: 35
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        left: 'right',
+        data: [name,name1],
+        inactiveColor: '#999',
+        //selectedMode: 'single',
+//      orient: 'vertical',
+//      width: 150,
+//      top: 50,
+//      borderWidth: 2,
+//      borderColor: 'blue',
+        textStyle: {
+            color: '#000'
+        }
+    },
+    dataZoom: [
+				{
+					show: true,
+					realtime: true,
+					start: 0,
+					end: 100,
+					handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z'
+				}
+		],
+    xAxis:  {
+        type: 'category',
+        boundaryGap: false,
+        data : xlist.map(function (str) {
+						return str.replace(' ', '\n')
+					}),
+    },
+    yAxis: {
+        type: 'value',
+        name: '温度（℃）',
+        axisLabel: {
+            formatter: '{value}'
+        }
+    },
+    series: [
+        {
+            name:name,
+            type:'line',
+            data: data,
+            itemStyle: {
+                normal: {
+                    color: 'rgb(255, 70, 131)'
+                }
+            }
+//          ,
+//          areaStyle: {
+//              normal: {
+//                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+//                      offset: 0,
+//                      //rgb(255, 158, 68)
+//                      color: '#fff184'
+//                  }, {
+//                      offset: 1,
+//                      //rgb(255, 70, 131)
+//                      color: '#fdcaab'
+//                  }])
+//              }
+//          }
+        },
+        {
+            name:name1,
+            type:'line',
+            data: data1,
+            itemStyle: {
+                normal: {
+                    color: '#2388da'
+                }
+            }
+//          ,
+//          areaStyle: {
+//              normal: {
+//                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+//                      offset: 0,
+//                      color: 'rgb(255, 158, 68)'
+//                  }, {
+//                      offset: 1,
+//                      color: 'rgb(255, 70, 131)'
+//                  }])
+//              }
+//          }
+        }
+    ]
+	};
+	myChart.setOption(option);
+}
+
+function mixtem(id,xlist,data,data1,data2,data3){
+	var myChart = echarts.init(document.getElementById(id),"shine");
+	option = {
+		grid: {
+        top: 60,
+        bottom: 80,
+        right: 25,
+        left: 35
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        left: 'center',
+        data: ['送风温度','送风温度设定点','混风温度','风阀开度'],
+        inactiveColor: '#999',
+        //selectedMode: 'single',
+//      orient: 'vertical',
+//      width: 150,
+//      top: 50,
+//      borderWidth: 2,
+//      borderColor: 'blue',
+        textStyle: {
+            color: '#000'
+        }
+    },
+    dataZoom: [
+				{
+					show: true,
+					realtime: true,
+					start: 0,
+					end: 100,
+					handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z'
+				}
+		],
+    xAxis:  {
+        type: 'category',
+        boundaryGap: false,
+        data : xlist.map(function (str) {
+						return str.replace(' ', '\n')
+					}),
+    },
+    yAxis: [{
+        type: 'value',
+        name: '温度（℃）',
+        axisLabel: {
+            formatter: '{value}'
+        }
+    }
+    ,{
+        type: 'value',
+        name: '开度（%）',
+        axisLabel: {
+            formatter: '{value}'
+        }
+    }
+    ],
+    series: [
+        {
+            name:'送风温度',
+            type:'line',
+            data: data,
+            itemStyle: {
+                normal: {
+                    color: 'rgb(255, 70, 131)'
+                }
+            }
+        },
+        {
+            name:'送风温度设定点',
+            type:'line',
+            data: data1,
+//          yAxisIndex: 1,
+            itemStyle: {
+                normal: {
+                    color: '#2388da'
+                }
+            }
+        },
+        {
+            name:'混风温度',
+            type:'line',
+            data: data2,
+//          yAxisIndex: 1,
+            itemStyle: {
+                normal: {
+                    color: '#ff9973'
+                }
+            }
+        },
+        {
+            name:'风阀开度',
+            type:'line',
+            data: data3,
+            yAxisIndex: 1,
+            itemStyle: {
+                normal: {
+                    color: '#37ce2c'
+                }
+            }
+        }
+    ]
+	};
+	myChart.setOption(option);
+//	window.addEventListener("resize",function(){
+//  myChart.setOption(option);
+// });
+}
+
+//加载温度和温度设定点
+function doubletem(val,lab){
+	var myChart = echarts.init(document.getElementById('doubletem'));
+	var dataStyle = { //作用不明
+	    normal: {
+	    		//color: '#45e8bc',
+	        label: {show:false},
+	        labelLine: {show:false}
+//	        shadowBlur: 40,
+//	        shadowColor: 'rgba(40, 40, 40, 0.5)',
+	    }
+	};
+	var placeHolderStyle = { //作用不明  原来是这是pie图里面的
+	    normal : {
+	        color: 'rgba(0,0,0,0.1)',
+	        label: {show:false},
+	        labelLine: {show:false}
+	    },
+	    emphasis : {
+	        color: 'rgba(0,0,0,0.1)'
+	    }
+	};
+	var option = {
+			 title: {
+	        text: val+'℃',
+	        subtext: lab+'℃',
+	        subtextStyle: {
+	        	color: '#45e8bc'
+	        },
+	        x: 'center',
+	        y: 'center',
+	        itemGap: 5,
+	        textStyle : {
+	            color : '#33d7fb',
+	            fontFamily : '微软雅黑',
+	            fontSize : 25,
+	            fontWeight : 'bolder'
+	        }
+	    },
+	    backgroundColor: '#fff', //图表的配置颜色
+	    color: ['#33d7fb','#45e8bc'], //每一项对应的颜色
+//	    tooltip : {  //提示框组件
+//	        show: true,
+//	        formatter: "{b} : {c}℃ "  //正则设置格式
+//	    },
+			legend: {  //图例组件
+			    //orient:'vertical', //图例的布局朝向
+			    x:"center",  //图例的位置--离左边的距离
+			    y:0,  //图例的位置--离上边的距离
+			    itemGap:10, //图例每项之间的间隔。横向布局时为水平间隔，纵向布局时为纵向间隔。
+			    data:['室内温度','设定点']
+			},
+	    series : [  //系列列表
+	        {
+	            name:'室内温度',  //名字--用于tooltip的显示
+	            type:'pie',    //类型--饼状图
+	            clockWise:false,   //饼图的扇区是否是顺时针排布。
+	            radius : [85,105], //饼图的半径，数组的第一项是内半径，第二项是外半径。 内半径是0就是一个真正的饼
+	            center:['50%', '50%'], //饼图片的中心
+	            itemStyle : dataStyle, //样式
+	            hoverAnimation: false, //是否开启 hover 在扇区上的放大动画效果。
+	            zlevel:2,
+	            data:[  //系列中的数据内容数组
+	                {
+	                    value:val,     //数据值总的值
+	                    name:'室内温度'  //数据项名称。
+	                },
+	                {
+	                    value:100-val,     //剩下的值
+	                    name:'invisible',
+	                    itemStyle : placeHolderStyle
+	                }
+	
+	            ],
+	        },
+	        {
+	            name:'设定点',
+	            type:'pie',
+	            clockWise:false,
+	            radius : [60, 80],
+	            center:['50%', '50%'], //饼图片的中心
+	            itemStyle : dataStyle,
+	            hoverAnimation: false,
+	            zlevel:100,
+	            data:[
+	                {
+	                    value:lab,   //数据值总的值
+	                    name:'设定点'
+	                },
+	                {
+	                    value:100-lab,
+	                    name:'invisible',
+	                    itemStyle : placeHolderStyle
+	                }
+	            ]
+	        }
+	    ]
+	};
+	myChart.setOption(option);
+}
+
+var id1 = parseInt(id) + 1;
+devicehistoryslist1(id1, _startTime, _endTime)
+function devicehistoryslist1(devid, startdate, enddate) {
+    var _url = 'http://123.56.156.91:8081/AppInterface/queryAllBzRecord?params={%22deviceId%22:'+ devid +',%22beginTime%22:%22' + startdate + '%22,%22endTime%22:%22' + enddate + '%22}';
+    //加载历史数据列表
+    $.ajax({
+        //要用post方式
+        type: "post",
+        //方法所在页面和方法名
+        url: _url,
+        //contentType: "application/json; charset=utf-8",
+        dataType: "jsonp",
+        jsonp: "jsonpCallback",
+        success: function (data) {
+        	//console.log(data);
+            if(data.data) {
+                var datas = data.data.reverse();
+
+                var xlist = new Array();
+
+                var ary0 = new Array();
+                var ary1 = new Array();
+                var ary2 = new Array();
+                var ary3 = new Array();
+                var ary4 = new Array();
+                var ary5 = new Array();
+                
+                var ary6 = new Array();
+                var ary7 = new Array();
+                var ary8 = new Array();
+                var ary9 = new Array();
+
+                for (var i = 0 ; i < datas.length; i++) {
+                    var datasAry = datas[i].data.split(",");
+                    xlist[i] = datas[i].syncTime;
+                    ary0[i] = datasAry[2];
+                    ary1[i] = datasAry[3];
+                    ary2[i] = datasAry[4];
+//                  ary3[i] = datasAry[5];
+//                  ary4[i] = datasAry[6];
+//                  ary5[i] = datasAry[7];
+                    
+                    if(parseFloat(datasAry[5]) > 20){ary3[i] = parseFloat(datasAry[5])/100;}else{ary3[i] = datasAry[5];}
+                    if(parseFloat(datasAry[6]) > 20){ary4[i] = parseFloat(datasAry[6])/100;}else{ary4[i] = datasAry[6];}
+                    if(parseFloat(datasAry[7]) > 20){ary5[i] = parseFloat(datasAry[7])/100;}else{ary5[i] = datasAry[7];}
+                    
+                    ary6[i] = datasAry[8];
+                    ary7[i] = datasAry[9];
+                    ary8[i] = datasAry[10];
+                    ary9[i] = datasAry[1];
+                };
+								avline("three",xlist,ary0,ary1,ary2,ary3,ary4,ary5);
+								glline("threeGL",xlist,ary6,ary7,ary8,ary9);
+                
+            }else{
+                alert('此时间段没有数据');
+            }
+        },
+        error: function (err) {
+            alert('系统连接错误，请重试！');
+        }
+    });
+}
+
+
+
+
+</script>
+</body>
+</html>
